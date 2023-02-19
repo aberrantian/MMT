@@ -38,7 +38,8 @@ body {
     border-radius: 16px;
 }
 
-#digits {
+#digits,
+#no-operators {
     width: 3em;
 }
 
