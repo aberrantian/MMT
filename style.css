@@ -20,5 +20,8 @@ body {
 
 p {
     text-align: center;
+}
+
+#options-container p {
     font-weight: bold;
 }
