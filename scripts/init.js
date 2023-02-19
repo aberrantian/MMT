@@ -24,3 +24,18 @@ const allBoxTargets = [
     multBox,
     divBox
 ]
+
+allBox.addEventListener('click', () => {
+    if (allBox.checked) {
+        for (const box of allBoxTargets) {
+            box.checked = true;
+        }
+
+
+    } else {
+        for (const box of allBoxTargets) {
+            box.checked = false;
+        }
+
+    }
+});
