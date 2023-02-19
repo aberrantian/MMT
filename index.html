@@ -8,32 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="start-button">Start</button>
+    <input type="button" id="start-button" value="Start">
+    
     <div id="options-container">
         <p>Mode Options</p>
         <div>
-            <input type="checkbox" id="all">
+            <input type="checkbox" id="all" checked>
             <label for="all">ALL</label>
         </div>
         <div>
-            <input type="checkbox" id="addition">
+            <input type="checkbox" id="addition" checked>
             <label for="addition">Addition</label>
         </div>
         <div>
-            <input type="checkbox" id="subtraction">
+            <input type="checkbox" id="subtraction" checked>
             <label for="subtraction">Subtraction</label>
         </div>
         <div>
-            <input type="checkbox" id="multiplication">
+            <input type="checkbox" id="multiplication" checked>
             <label for="multiplication">Multiplication</label>
         </div>
         <div>
-            <input type="checkbox" id="division">
+            <input type="checkbox" id="division" checked>
             <label for="division">Division</label>
         </div>
 
         <p>Difficulty</p>
         <!-- add digit scale, decimals, recurring, negatives -->
+        <div>
+            <input type="number" id="digits" min="1" value="1">
+            <label for="digits">Digits</label>
+        </div>
+        <div>
+            <input type="checkbox" id="decimals">
+            <label for="decimals">Decimals</label>
+        </div>
+        <div>
+            <input type="checkbox" id="recurring">
+            <label for="recurring">Recurring</label>
+        </div>
+        <div>
+            <input type="checkbox" id="negatives">
+            <label for="negatives">Negatives</label>
+        </div>
     </div>
 </body>
 </html>
