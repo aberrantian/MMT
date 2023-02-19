@@ -10,8 +10,8 @@
 </head>
 <body>
     <div id="scoreboard">
-        <p>High Score: N/A</p>
-        <p>Previous Score: N/A</p>
+        <p id="high-score">High Score: N/A</p>
+        <p id="previous-score">Previous Score: N/A</p>
     </div>
     
     <input type="button" id="start-button" value="Start"> <!-- NOTE: button needs to transfer user to play.html -->
@@ -41,10 +41,10 @@
     </div>
 
     <p class="title">Difficulty</p>
-    <!-- add digit scale, decimals, recurring, negatives -->
+    
     <div class="options-container">
         <label for="digits">
-            <input type="number" id="digits" min="1" value="1"> Digits
+            <input type="number" id="digits" min="1" max="10" value="1"> Digits
         </label>
         
         <label for="decimals">

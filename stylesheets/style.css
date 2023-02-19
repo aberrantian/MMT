@@ -22,12 +22,24 @@ body {
 
 .title {
     font-weight: bold;
-    margin: 16px;
+    margin-top: 16px;
+    font-size: 1.3em;
 }
 
 #start-button {
     padding: 8px 16px;
-    margin: 16px;
+    margin-top: 16px;
+
+    font: inherit;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 16px;
+}
+
+#digits {
+    width: 3em;
 }
 
 .options-container {
