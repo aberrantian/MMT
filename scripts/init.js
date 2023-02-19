@@ -1,0 +1,4 @@
+/*
+This script will collect mode options into a json file
+for use in interactive mode.
+*/
