@@ -16,47 +16,48 @@
     
     <input type="button" id="start-button" value="Start"> <!-- NOTE: button needs to transfer user to play.html -->
     
-    <div id="options-container">
-        <p>Mode Options</p>
-        <div>
-            <input type="checkbox" id="all" checked>
-            <label for="all">ALL</label>
-        </div>
-        <div>
-            <input type="checkbox" id="addition" checked>
-            <label for="addition">Addition</label>
-        </div>
-        <div>
-            <input type="checkbox" id="subtraction" checked>
-            <label for="subtraction">Subtraction</label>
-        </div>
-        <div>
-            <input type="checkbox" id="multiplication" checked>
-            <label for="multiplication">Multiplication</label>
-        </div>
-        <div>
-            <input type="checkbox" id="division" checked>
-            <label for="division">Division</label>
-        </div>
+    <p class="title">Mode Options</p>
 
-        <p>Difficulty</p>
-        <!-- add digit scale, decimals, recurring, negatives -->
-        <div>
-            <input type="number" id="digits" min="1" value="1">
-            <label for="digits">Digits</label>
-        </div>
-        <div>
-            <input type="checkbox" id="decimals">
-            <label for="decimals">Decimals</label>
-        </div>
-        <div>
-            <input type="checkbox" id="recurring">
-            <label for="recurring">Recurring</label>
-        </div>
-        <div>
-            <input type="checkbox" id="negatives">
-            <label for="negatives">Negatives</label>
-        </div>
+    <div class="options-container">
+        <label for="all">
+            <input type="checkbox" id="all" checked> ALL
+        </label>
+        
+        <label for="addition">
+            <input type="checkbox" id="addition" checked> Addition
+        </label>
+        
+        <label for="subtraction">
+            <input type="checkbox" id="subtraction" checked> Subtraction
+        </label>
+        
+        <label for="multiplication">
+            <input type="checkbox" id="multiplication" checked> Multiplication
+        </label>
+        
+        <label for="division">
+            <input type="checkbox" id="division" checked> Division
+        </label>
+    </div>
+
+    <p class="title">Difficulty</p>
+    <!-- add digit scale, decimals, recurring, negatives -->
+    <div class="options-container">
+        <label for="digits">
+            <input type="number" id="digits" min="1" value="1"> Digits
+        </label>
+        
+        <label for="decimals">
+            <input type="checkbox" id="decimals"> Decimals
+        </label>
+        
+        <label for="recurring">
+            <input type="checkbox" id="recurring"> Recurring
+        </label>
+    
+        <label for="negatives">
+            <input type="checkbox" id="negatives"> Negatives
+        </label>
     </div>
 </body>
 </html>
