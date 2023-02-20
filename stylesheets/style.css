@@ -53,7 +53,7 @@ body {
     display: flex;
 }
 
-.question {
+#example-question {
     font-family: monospace;
     font-size: 1.5em;
 }

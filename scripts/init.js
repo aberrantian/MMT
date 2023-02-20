@@ -46,3 +46,21 @@ const startButton = document.getElementById('start-button');
 startButton.addEventListener('click', () => {
     alert('click');
 })
+
+//*
+let question = document.getElementById('example-question');
+
+question.innerHTML = 'test';
+
+let timeElapsed = 0;
+
+const intervalID = setInterval(() => {
+    question.innerHTML = timeElapsed;
+    timeElapsed++;
+
+    if (timeElapsed > 10) {
+        clearInterval(intervalID);
+    }
+}, 1000)
+//*/
+
