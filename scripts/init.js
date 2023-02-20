@@ -64,7 +64,6 @@ function setupConfig() {
         config[opt.id] = opt.value;
     }
 
-    console.log(config);
 }
 
 
