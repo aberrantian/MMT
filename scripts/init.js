@@ -47,7 +47,7 @@ startButton.addEventListener('click', () => {
     alert('click');
 })
 
-//*
+/*
 let question = document.getElementById('example-question');
 
 question.innerHTML = 'test';
