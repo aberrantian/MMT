@@ -38,7 +38,7 @@ body {
 }
 
 #digits,
-#no-operators {
+#num-operators {
     width: 3em;
 }
 

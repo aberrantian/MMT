@@ -23,7 +23,7 @@ const allBoxTargets = [
     addBox,
     subBox,
     multBox,
-    divBox
+    divBox,
 ]
 
 allBox.addEventListener('click', () => {
@@ -44,9 +44,29 @@ allBox.addEventListener('click', () => {
 
 const startButton = document.getElementById('start-button');
 
-startButton.addEventListener('click', () => {
-    alert('click');
-})
+startButton.addEventListener('click', setupConfig)
+
+let config = {};
+let options = [
+    addBox,
+    subBox,
+    multBox,
+    divBox,
+    decimalBox,
+    recurBox,
+    negBox,
+    digits,
+    numOperators,
+]
+
+function setupConfig() {
+    for (const opt of options) {
+        config[opt.id] = opt.value;
+    }
+
+    console.log(config);
+}
+
 
 /*
 let question = document.getElementById('example-question');
