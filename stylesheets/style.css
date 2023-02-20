@@ -14,7 +14,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     height: 100vh;
@@ -47,4 +46,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+}
+
+.question {
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+#scoreboard {
+    text-align: left;
 }

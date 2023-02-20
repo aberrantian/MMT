@@ -39,3 +39,10 @@ allBox.addEventListener('click', () => {
 
     }
 });
+
+
+const startButton = document.getElementById('start-button');
+
+startButton.addEventListener('click', () => {
+    alert('click');
+})
