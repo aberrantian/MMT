@@ -26,25 +26,30 @@ const allBoxTargets = [
     divBox,
 ]
 
-allBox.addEventListener('click', () => {
-    if (allBox.checked) {
-        for (const box of allBoxTargets) {
-            box.checked = true;
+if (allBox) {
+    allBox.addEventListener('click', () => {
+        if (allBox.checked) {
+            for (const box of allBoxTargets) {
+                box.checked = true;
+            }
+    
+    
+        } else {
+            for (const box of allBoxTargets) {
+                box.checked = false;
+            }
+    
         }
+    });
 
-
-    } else {
-        for (const box of allBoxTargets) {
-            box.checked = false;
-        }
-
-    }
-});
+}
 
 
 const startButton = document.getElementById('start-button');
 
-startButton.addEventListener('click', start)
+if (startButton) {
+    startButton.addEventListener('click', start)
+}
 
 let config = {};
 let options = [
