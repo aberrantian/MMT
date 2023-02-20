@@ -16,6 +16,7 @@ const negBox = document.getElementById('negatives');
 
 // input type number
 const digits = document.getElementById('digits');
+const numOperators = document.getElementById('num-operators');
 
 
 const allBoxTargets = [
