@@ -93,3 +93,4 @@ const intervalID = setInterval(() => {
 }, 1000)
 //*/
 
+export {config};
