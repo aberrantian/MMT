@@ -44,7 +44,7 @@ allBox.addEventListener('click', () => {
 
 const startButton = document.getElementById('start-button');
 
-startButton.addEventListener('click', setupConfig)
+startButton.addEventListener('click', start)
 
 let config = {};
 let options = [
@@ -64,6 +64,15 @@ function setupConfig() {
         config[opt.id] = opt.value;
     }
 
+}
+
+function redirect () {
+    window.location.href = './pages/play.html';
+}
+
+function start() {
+    setupConfig();
+    redirect();
 }
 
 
