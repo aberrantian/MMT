@@ -14,7 +14,6 @@ import {
 
 
 let config = {};
-console.log(typeof config);
 
 const allBoxTargets = [
     addBox,
