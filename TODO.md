@@ -1,3 +1,2 @@
 # TODO
-- create question generator
-- update example question according to config
+- test to see if imported object is empty due to null checks
