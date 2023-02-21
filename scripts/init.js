@@ -35,47 +35,39 @@ const options = [
 ]
 
 
-if (allBox) {
-    allBox.addEventListener('click', () => {
-        if (allBox.checked) {
-            for (const box of allBoxTargets) {
-                box.checked = true;
-            };
-            setupConfig();
-
-        } else {
-            for (const box of allBoxTargets) {
-                box.checked = false;
-            };
-            setupConfig();
+allBox.addEventListener('click', () => {
+    if (allBox.checked) {
+        for (const box of allBoxTargets) {
+            box.checked = true;
         };
+        setupConfig();
 
-        console.log(config);
-    });
-};
+    } else {
+        for (const box of allBoxTargets) {
+            box.checked = false;
+        };
+        setupConfig();
+    };
 
-if (startButton) {
-    startButton.addEventListener('click', start)
-}
+    console.log(config);
+});
+
+startButton.addEventListener('click', start)
 
 for (const opt of options) {
-    if (opt) {
-        opt.addEventListener('click', () => {
-            setupConfig();
-            console.log(config);
-        });
-    };
+    opt.addEventListener('click', () => {
+        setupConfig();
+        console.log(config);
+    });
 };
 
 
 function setupConfig() {
     for (const opt of options) {
-        if (opt) {
-            if (opt.type == 'checkbox') {
-                config[opt.id] = opt.checked;
-            } else if (opt.type == 'number') {
-                config[opt.id] = opt.value;
-            };
+        if (opt.type == 'checkbox') {
+            config[opt.id] = opt.checked;
+        } else if (opt.type == 'number') {
+            config[opt.id] = opt.value;
         };
     };
 
