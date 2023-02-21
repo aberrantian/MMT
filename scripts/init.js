@@ -78,14 +78,14 @@ function setupConfig() {
 setupConfig();
 
 
-function redirect () {
-    window.location.href = './pages/play.html';
+function redirect (destination) {
+    window.location.href = destination;
 }
 
 
 function start() {
     setupConfig();
-    redirect();
+    redirect('/pages/play.html');
     // console.log(config);
 }
 
