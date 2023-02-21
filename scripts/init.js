@@ -47,11 +47,7 @@ if (allBox) {
 
 const startButton = document.getElementById('start-button');
 
-if (startButton) {
-    startButton.addEventListener('click', start)
-}
-
-let config = {};
+export let config = {};
 let options = [
     addBox,
     subBox,
@@ -78,8 +74,12 @@ function redirect () {
 function start() {
     setupConfig();
     redirect();
+    // console.log(config);
 }
 
+if (startButton) {
+    startButton.addEventListener('click', start)
+}
 
 /*
 let question = document.getElementById('example-question');
@@ -97,5 +97,3 @@ const intervalID = setInterval(() => {
     }
 }, 1000)
 //*/
-
-export {config};
