@@ -13,6 +13,29 @@ import {
 } from './elements.js';
 
 
+let config = {};
+console.log(typeof config);
+
+const allBoxTargets = [
+    addBox,
+    subBox,
+    multBox,
+    divBox,
+]
+
+const options = [
+    addBox,
+    subBox,
+    multBox,
+    divBox,
+    decimalBox,
+    recurBox,
+    negBox,
+    digits,
+    numOperators,
+]
+
+
 if (allBox) {
     allBox.addEventListener('click', () => {
         if (allBox.checked) {
@@ -34,33 +57,12 @@ if (startButton) {
     startButton.addEventListener('click', start)
 }
 
-const allBoxTargets = [
-    addBox,
-    subBox,
-    multBox,
-    divBox,
-]
-
-const options = [
-    addBox,
-    subBox,
-    multBox,
-    divBox,
-    decimalBox,
-    recurBox,
-    negBox,
-    digits,
-    numOperators,
-]
-
 for (const opt of options) {
     opt.addEventListener('click', () => {
         setupConfig();
         console.log(config);
     })
 };
-
-let config = {};
 
 
 function setupConfig() {
