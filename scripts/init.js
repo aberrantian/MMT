@@ -1,8 +1,3 @@
-/*
-This script will collect mode options into a json file
-for use in interactive mode.
-*/
-
 // input type checkbox
 const allBox = document.getElementById('all');
 const addBox = document.getElementById('addition');
@@ -47,7 +42,7 @@ if (allBox) {
 
 const startButton = document.getElementById('start-button');
 
-export let config = {};
+let config = {};
 let options = [
     addBox,
     subBox,
@@ -97,3 +92,5 @@ const intervalID = setInterval(() => {
     }
 }, 1000)
 //*/
+
+export { config };
