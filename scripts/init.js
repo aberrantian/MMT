@@ -59,19 +59,23 @@ if (startButton) {
 }
 
 for (const opt of options) {
-    opt.addEventListener('click', () => {
-        setupConfig();
-        console.log(config);
-    })
+    if (opt) {
+        opt.addEventListener('click', () => {
+            setupConfig();
+            console.log(config);
+        });
+    };
 };
 
 
 function setupConfig() {
     for (const opt of options) {
-        if (opt.type == 'checkbox') {
-            config[opt.id] = opt.checked;
-        } else if (opt.type == 'number') {
-            config[opt.id] = opt.value;
+        if (opt) {
+            if (opt.type == 'checkbox') {
+                config[opt.id] = opt.checked;
+            } else if (opt.type == 'number') {
+                config[opt.id] = opt.value;
+            };
         };
     };
 
