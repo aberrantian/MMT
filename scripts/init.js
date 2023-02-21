@@ -4,13 +4,14 @@ if (allBox) {
         if (allBox.checked) {
             for (const box of allBoxTargets) {
                 box.checked = true;
-            };    
-            console.log(config);
+            };
+            setupConfig();
+
         } else {
             for (const box of allBoxTargets) {
                 box.checked = false;
             };
-            console.log(config);
+            setupConfig();
         };
     });
 };
@@ -61,11 +62,15 @@ let config = {};
 
 function setupConfig() {
     for (const opt of options) {
-        config[opt.id] = opt.value;
-        // console.log(`${opt.id} = ${opt.value}`);
-    }
+        if (opt.type == 'checkbox') {
+            config[opt.id] = opt.checked;
+        } else if (opt.type == 'number') {
+            config[opt.id] = opt.value;
+        };
+    };
 
-}
+    console.log(config);
+};
 
 setupConfig();
 
