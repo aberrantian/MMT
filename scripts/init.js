@@ -13,7 +13,7 @@ import {
 } from './elements.js';
 
 
-let config = {};
+export let config = {};
 
 const allBoxTargets = [
     addBox,
@@ -105,5 +105,3 @@ const intervalID = setInterval(() => {
     }
 }, 1000)
 //*/
-
-export { config };
