@@ -49,6 +49,8 @@ if (allBox) {
             };
             setupConfig();
         };
+
+        console.log(config);
     });
 };
 
@@ -73,7 +75,7 @@ function setupConfig() {
         };
     };
 
-    console.log(config);
+    // console.log(config);
 };
 
 setupConfig();
