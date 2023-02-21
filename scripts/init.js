@@ -84,7 +84,7 @@ function redirect (destination) {
 
 function start() {
     setupConfig();
-    redirect('/pages/play.html');
+    redirect('./pages/play.html');
     // console.log(config);
 }
 
