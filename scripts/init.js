@@ -1,4 +1,18 @@
-const allBox = document.getElementById('all');
+import {
+    allBox,
+    addBox,
+    subBox,
+    multBox,
+    divBox,
+    decimalBox,
+    recurBox,
+    negBox,
+    digits,
+    numOperators,
+    startButton
+} from './elements.js';
+
+
 if (allBox) {
     allBox.addEventListener('click', () => {
         if (allBox.checked) {
@@ -16,17 +30,6 @@ if (allBox) {
     });
 };
 
-const addBox = document.getElementById('addition');
-const subBox = document.getElementById('subtraction');
-const multBox = document.getElementById('multiplication');
-const divBox = document.getElementById('division');
-const decimalBox = document.getElementById('decimals');
-const recurBox = document.getElementById('recurring');
-const negBox = document.getElementById('negatives');
-const digits = document.getElementById('digits');
-const numOperators = document.getElementById('num-operators');
-
-const startButton = document.getElementById('start-button');
 if (startButton) {
     startButton.addEventListener('click', start)
 }
