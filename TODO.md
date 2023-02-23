@@ -1,2 +1,3 @@
 # TODO
-- convert to single page utilizing DOM manipulation
+- create main menu
+- create scene manager
