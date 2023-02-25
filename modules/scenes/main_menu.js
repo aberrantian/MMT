@@ -1,3 +1,5 @@
+import { change, scene } from "../scene_mgr.js";
+
 export const mainMenu = document.createElement('div');
 mainMenu.setAttribute('id', 'main-menu');
 
@@ -31,11 +33,10 @@ aboutBtn.setAttribute('id', 'about-button');
 aboutBtn.setAttribute('class', 'button');
 aboutBtn.textContent = 'about';
 
-
-const about = document.createElement('div');
-about.setAttribute('id', 'about-button');
-about.setAttribute('class', 'button');
-about.textContent = 'about';
+aboutBtn.addEventListener('click', () => {
+    change(scene.about);
+    console.log('click');
+});
 
 const elements = [
     arithmeticBtn,
