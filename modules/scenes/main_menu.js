@@ -35,7 +35,6 @@ aboutBtn.textContent = 'about';
 
 aboutBtn.addEventListener('click', () => {
     change(scene.about);
-    console.log('click');
 });
 
 const elements = [
