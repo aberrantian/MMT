@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -15,6 +15,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     height: 100vh;
+}
+
+.button {
+    border: #fff solid 4px;
+    background-color: #000;
+    color: #fff;
+
+    margin-top: 8px;
+    padding: 8px;
+
+    user-select: none;
+}
+
+.button:hover {
+    border: #ababab solid 4px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.button:active {
+    border: #808080 solid 4px;
+    background-color: #ababab;
+    color: #000;
+    cursor: pointer;
 }
