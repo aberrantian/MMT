@@ -1,9 +1,10 @@
-import { mainMenu } from "./scenes/main_menu.js";
+import { activeScene, change, scene } from "./scene_mgr.js";
 
 export function init () {
-    while (document.body.lastChild) {
-        document.body.removeChild(document.body.lastChild);
+    for (const [key, value] of Object.entries(scene)) {
+        scene[key].hidden = true;
+        document.body.appendChild(value);
     };
 
-    document.body.appendChild(mainMenu);
+    change(activeScene);
 };
