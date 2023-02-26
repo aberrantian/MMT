@@ -1,52 +1,21 @@
 import { change, scene } from "../scene_mgr.js";
+import { create } from "../create.js";
 
-export const mainMenu = document.createElement('div');
-mainMenu.setAttribute('id', 'main-menu');
+export const mainMenu = create.div('main-menu');
 
-const arithmeticBtn = document.createElement('div');
-arithmeticBtn.setAttribute('id', 'arithmetic-button');
-arithmeticBtn.setAttribute('class', 'button');
-arithmeticBtn.textContent = 'arithmetic';
+const arithmeticBtn = create.btn('arithmetic-button', null, 'arithmetic');
 
-const multTablesBtn = document.createElement('div');
-multTablesBtn.setAttribute('id', 'mult-tables-button');
-multTablesBtn.setAttribute('class', 'button');
-multTablesBtn.textContent = 'multiplication tables';
+const multTablesBtn = create.btn('mult-tables-button', null, 'multiplication tables');
 
-const unitConBtn = document.createElement('div');
-unitConBtn.setAttribute('id', 'unit-con-button');
-unitConBtn.setAttribute('class', 'button');
-unitConBtn.textContent = 'unit conversion';
+const unitConBtn = create.btn('unit-con-button', null, 'unit conversion');
 
-const percentagesBtn = document.createElement('div');
-percentagesBtn.setAttribute('id', 'percentages-button');
-percentagesBtn.setAttribute('class', 'button');
-percentagesBtn.textContent = 'percentages';
+const percentagesBtn = create.btn('percentages-button', null, 'percentages');
 
-const settingsBtn = document.createElement('div');
-settingsBtn.setAttribute('id', 'settings-button');
-settingsBtn.setAttribute('class', 'button');
-settingsBtn.textContent = 'settings';
+const settingsBtn = create.btn('settings-button', null, 'settings');
 
-const aboutBtn = document.createElement('div');
-aboutBtn.setAttribute('id', 'about-button');
-aboutBtn.setAttribute('class', 'button');
-aboutBtn.textContent = 'about';
-
+const aboutBtn = create.btn('about-button', null, 'about');
 aboutBtn.addEventListener('click', () => {
     change(scene.about);
 });
 
-const elements = [
-    arithmeticBtn,
-    multTablesBtn,
-    unitConBtn,
-    percentagesBtn,
-    settingsBtn,
-    aboutBtn
-]
-
-
-for (const element of elements) {
-    mainMenu.appendChild(element);
-};
+create.appends(mainMenu, arithmeticBtn, multTablesBtn, unitConBtn, percentagesBtn, settingsBtn, aboutBtn);
