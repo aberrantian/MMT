@@ -42,4 +42,11 @@ export const create = {
         const input = create.node('input', id, classes, textContent);
         input.type = inputType;
     },
+    link: function (id, classes, title, url) {
+        const newLink = create.node('a', id, classes);
+        newLink.title = title;
+        newLink.href = url;
+
+        return newLink;
+    },
 };
