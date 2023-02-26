@@ -1,14 +1,14 @@
 import { change, scene } from "../scene_mgr.js";
+import { create } from "../create.js";
 
-export const about = document.createElement('div');
-about.setAttribute('id', 'about');
+export const about = create.div('about');
 
-const mainMenuBtn = document.createElement('div');
-mainMenuBtn.setAttribute('id', 'main-menu-button');
-mainMenuBtn.setAttribute('class', 'button');
-mainMenuBtn.textContent = 'main menu';
+const mainMenuBtn = create.btn('main-menu-button', null, 'main menu');
 mainMenuBtn.addEventListener('click', () => {
     change(scene.mainMenu);
 });
 
-about.appendChild(mainMenuBtn);
+
+const desc = create.div('div1', 'text', 'description');
+
+create.appends(about, mainMenuBtn, desc);
