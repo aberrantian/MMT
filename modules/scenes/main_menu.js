@@ -18,4 +18,7 @@ aboutBtn.addEventListener('click', () => {
     change(scene.about);
 });
 
-create.appends(mainMenu, arithmeticBtn, multTablesBtn, unitConBtn, percentagesBtn, settingsBtn, aboutBtn);
+const buttonContainer = create.div(null, 'container');
+create.appends(buttonContainer, arithmeticBtn, multTablesBtn, unitConBtn, percentagesBtn, settingsBtn, aboutBtn);
+
+create.appends(mainMenu, buttonContainer);

@@ -8,6 +8,8 @@ mainMenuBtn.addEventListener('click', () => {
     change(scene.mainMenu);
 });
 
+const buttonContainer = create.div(null, 'container');
+buttonContainer.appendChild(mainMenuBtn);
 
 const textA = document.createTextNode(`
 MMT (Mental Math Trainer) focuses primarily on mental math skills.
@@ -26,5 +28,8 @@ const textC = document.createTextNode('.');
 
 const desc = create.p();
 
+const textContainer = create.div(null, 'container');
+textContainer.appendChild(desc);
+
 create.appends(desc, textA, sourceLink, textB, devLink, textC);
-create.appends(about, mainMenuBtn, desc);
+create.appends(about, buttonContainer, textContainer);
