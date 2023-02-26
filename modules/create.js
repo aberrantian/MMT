@@ -31,7 +31,7 @@ export const create = {
         const newBtn = create.div(id, classes, textContent);
 
         if (classes != undefined) {
-            newBtn.setAttribute('class', classes + ' button');
+            newBtn.setAttribute('class', 'button ' + classes);
         } else {
             newBtn.setAttribute('class', 'button');
         }
