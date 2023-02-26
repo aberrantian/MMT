@@ -42,10 +42,15 @@ export const create = {
         const input = create.node('input', id, classes, textContent);
         input.type = inputType;
     },
-    link: function (id, classes, title, url) {
+    link: function (id, classes, textContent, url, external) {
         const newLink = create.node('a', id, classes);
-        newLink.title = title;
+        newLink.textContent = textContent;
         newLink.href = url;
+
+        if (external == true) {
+            newLink.target = '_blank';
+            newLink.rel = 'noopener';
+        };
 
         return newLink;
     },
