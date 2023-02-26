@@ -12,8 +12,7 @@ const buttonContainer = create.div(null, 'container');
 buttonContainer.appendChild(mainMenuBtn);
 
 const textA = document.createTextNode(`
-MMT (Mental Math Trainer) focuses primarily on mental math skills.
-Teaching subjects of mathematics is secondary. Here is the
+MMT (Mental Math Trainer) is a free and open source project that aims to facilitate the practice of mental math skills. Here is the
 `);
 
 const sourceLink = create.link(null, 'link', 'source code', 'https://github.com/aberrantian/MMT', true);
