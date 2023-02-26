@@ -4,6 +4,7 @@ export const create = {
             parent.appendChild(child);
         };
     },
+
     node: function (type, id, classes, textContent) {
         const newNode = document.createElement(type);
 
@@ -21,12 +22,15 @@ export const create = {
 
         return newNode;
     },
+
     div: function (id, classes, textContent) {
         return create.node('div', id, classes, textContent);
     },
+
     p: function (id, classes, textContent) {
         return create.node('p', id, classes, textContent);
     },
+
     btn: function (id, classes, textContent) {
         const newBtn = create.div(id, classes, textContent);
 
@@ -38,10 +42,12 @@ export const create = {
 
         return newBtn;
     },
+
     input: function (inputType, id, classes, textContent) {
         const input = create.node('input', id, classes, textContent);
         input.type = inputType;
     },
+    
     link: function (id, classes, textContent, url, external) {
         const newLink = create.node('a', id, classes);
         newLink.textContent = textContent;
