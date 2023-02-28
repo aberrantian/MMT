@@ -9,3 +9,10 @@ mainMenuBtn.addEventListener('click', () => {
 });
 
 settingsScene.appendChild(mainMenuBtn);
+
+let settings = {
+    addition: true,
+    subtraction: true,
+    multiplication: true,
+    division: true,
+}
