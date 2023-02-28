@@ -1,4 +1,6 @@
 # TODO
+## Notes
+All trainers should include 2 modes (endless and timed interval), scoreboard, and settings
 ## High Priority
 - setup arithmetic menu
 - setup multiplication tables menu
