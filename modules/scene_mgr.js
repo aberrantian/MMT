@@ -1,4 +1,4 @@
-import { arithmetic } from "./scenes/arithmetic.js";
+import { mainMenu } from "./scenes/main-menu.js";
 import { play } from "./scenes/play.js";
 import { settings } from "./scenes/settings.js";
 
@@ -13,9 +13,9 @@ export function change (scene) {
 };
 
 export const scene = {
-    arithmetic: arithmetic,
+    mainMenu: mainMenu,
     settings: settings,
     play: play,
 };
 
-export let activeScene = scene.arithmetic;
+export let activeScene = scene.mainMenu;

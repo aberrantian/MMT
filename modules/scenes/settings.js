@@ -5,7 +5,7 @@ export const settings = create.div('settings');
 
 const mainMenuBtn = create.btn(null, null, 'main menu');
 mainMenuBtn.addEventListener('click', () => {
-    change(scene.arithmetic);
+    change(scene.mainMenu);
 });
 
 settings.appendChild(mainMenuBtn);

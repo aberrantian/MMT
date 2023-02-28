@@ -5,7 +5,7 @@ export const play = create.div('play');
 
 const mainMenuBtn = create.btn(null, null, 'main menu');
 mainMenuBtn.addEventListener('click', () => {
-    change(scene.arithmetic);
+    change(scene.mainMenu);
 });
 
 create.appends(play, mainMenuBtn);

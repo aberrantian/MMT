@@ -1,7 +1,7 @@
 import { change, scene } from "../scene_mgr.js";
 import { create } from "../create.js";
 
-export const arithmetic = create.div('arithmetic');
+export const mainMenu = create.div('main-menu');
 
 const header = create.div(null, 'header', null);
 const scoreboard = create.div('scoreboard', null, 'scoreboard');
@@ -14,7 +14,7 @@ const settingsBtn = create.btn(null, null, 'settings');
 create.appends(buttonContainer, startBtn, settingsBtn);
 create.appends(main, buttonContainer);
 
-create.appends(arithmetic, header, main);
+create.appends(mainMenu, header, main);
 
 startBtn.addEventListener('click', () => {
     change(scene.play);
