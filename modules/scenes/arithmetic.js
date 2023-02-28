@@ -15,3 +15,11 @@ create.appends(buttonContainer, startBtn, settingsBtn);
 create.appends(main, buttonContainer);
 
 create.appends(arithmetic, header, main);
+
+startBtn.addEventListener('click', () => {
+    change(scene.play);
+});
+
+settingsBtn.addEventListener('click', () => {
+    change(scene.settings);
+});
