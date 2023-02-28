@@ -1,6 +1,6 @@
-import { mainMenu } from "./scenes/main-menu.js";
-import { play } from "./scenes/play.js";
-import { settings } from "./scenes/settings.js";
+import { mainScene } from "./scenes/main-menu.js";
+import { playScene } from "./scenes/play.js";
+import { settingsScene } from "./scenes/settings.js";
 
 export function change (scene) {
     activeScene.hidden = true;
@@ -13,9 +13,9 @@ export function change (scene) {
 };
 
 export const scene = {
-    mainMenu: mainMenu,
-    settings: settings,
-    play: play,
+    mainScene: mainScene,
+    settings: settingsScene,
+    playScene: playScene,
 };
 
-export let activeScene = scene.mainMenu;
+export let activeScene = scene.mainScene;
