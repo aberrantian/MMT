@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -47,13 +47,3 @@ body {
     justify-content: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    justify-content: space-evenly;
-}
-
-p {
-    max-width: 60vw;
-}
