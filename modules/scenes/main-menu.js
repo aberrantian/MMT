@@ -18,7 +18,14 @@ create.appends(mainScene, header, main);
 
 startBtn.addEventListener('click', () => {
     change(scene.playScene);
-    // let session = setTimeout(change(scene.mainMenu), 1000);
+    let sessionLength = 10;
+    let session = setInterval(() => {
+        sessionLength--;
+        if (sessionLength < 0) {
+            change(scene.mainScene);
+            clearInterval(session);
+        };
+    }, 1000);
 });
 
 settingsBtn.addEventListener('click', () => {
