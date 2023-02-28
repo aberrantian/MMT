@@ -3,9 +3,9 @@ import { create } from "../create.js";
 
 export const settings = create.div('settings');
 
-const mainMenuBtn = create.btn('main-menu-button', null, 'main menu');
+const mainMenuBtn = create.btn(null, null, 'main menu');
 mainMenuBtn.addEventListener('click', () => {
-    change(scene.mainMenu);
+    change(scene.arithmetic);
 });
 
 settings.appendChild(mainMenuBtn);
