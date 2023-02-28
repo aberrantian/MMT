@@ -19,4 +19,4 @@ mainMenuBtn.addEventListener('click', () => {
     change(scene.mainMenu);
 });
 
-arithmetic.appendChild(mainMenuBtn);
+create.appends(arithmetic, scoreboard, startBtn, settingsBtn, mainMenuBtn);
