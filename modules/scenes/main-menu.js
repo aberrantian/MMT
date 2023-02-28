@@ -10,8 +10,7 @@ header.appendChild(scoreboard);
 const main = create.div(null, 'main', null);
 const buttonContainer = create.div(null, 'button-container', null);
 const startBtn = create.btn(null, null, 'start');
-const settingsBtn = create.btn(null, null, 'settings');
-create.appends(buttonContainer, startBtn, settingsBtn);
+create.appends(buttonContainer, startBtn);
 create.appends(main, buttonContainer);
 
 create.appends(mainScene, header, main);
@@ -26,8 +25,4 @@ startBtn.addEventListener('click', () => {
             clearInterval(session);
         };
     }, 1000);
-});
-
-settingsBtn.addEventListener('click', () => {
-    change(scene.settings);
 });
